@@ -1,0 +1,45 @@
+
+<div class="container-md">
+
+<%= form_for @usuarios do |f| %>
+
+    <div>
+        <%= f.label :tipo_persona %>
+        <%= f.text_field :tipo_persona %>
+    </div>
+    <div>
+        <%= f.label :documento %>
+        <%= f.number_field :documento %>
+    </div>
+    <div>
+        <%= f.label :fecha_emision_doc %>
+        <%= f.text_field :fecha_emision_doc %>
+    </div>
+    <div>
+    <%= f.label :fecha_venc_doc %>
+    <%= f.text_field :fecha_venc_doc %>
+    </div>
+    <div>
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %>
+    </div>
+    <div>
+    <%= f.label :correo %>
+    <%= f.email_field :correo %>
+    </div>
+    <div>
+    <%= f.label :telefono_principal %>
+    <%= f.number_field :telefono_principal %>
+    </div>
+    <div>
+    <%= f.label :telefono_secundario %>
+    <%= f.number_field :telefono_secundario %>
+    </div>
+
+    <div>
+        <%= f.submit %>
+    </div>
+  <% end %>
+  </div>
+
+  
